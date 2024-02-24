@@ -3,11 +3,6 @@ A user-friendly way to export SJTU lecture schedules as iCalender files.
 
 将你的交大课程表导出为 .ics 文件，以便导入到任何一个日程管理软件中！
 
-## Important
-The executable file for Windows users is not ready yet. I'm still looking for a way to upload the 40MB file to GitHub. 
-
-.exe 文件尚未可用。由于文件过大，我正在寻找办法将它上传到 GitHub 上。当然，你仍然可以使用脚本。如果你有缩小打包 Python 脚本文件大小的方法，请提示我！
-
 ## Usage/使用方法 🚀
 For Windows users, you can directly download and double click the .EXE file. For Mac or Linux users you may need to download the .py script and run it using your own interpreter. No matter what platform you are on, **please make sure you have Internet connection when using it.**
 

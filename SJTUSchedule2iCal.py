@@ -5,6 +5,9 @@
 @description: 用于将 SJTU 教学安排自动转换为 iCal 文件
 @license: GPL-3.0
 
+@version: 1.1
+@description: 增加了对报错信息的输出，与完成输出后提示语的延时
+
 代码主要来自于 PhotonQuantum 的 pysjtu 项目中的 export.py，并由 UserDetained 修改了 bug 和文件保存逻辑，提升了易用性。
 要了解关于此项目的更多信息，请访问 https://github.com/PhotonQuantum/pysjtu
 '''
@@ -15,6 +18,7 @@ from ics import Calendar, Event
 from datetime import datetime, timezone, timedelta, time, date
 import collections.abc
 from pathlib import Path
+import time as t
 
 desktopDir = Path.home() / "Desktop" # 此处涉及到路径问题，如果想要保存在其他位置，请修改此处
 
@@ -46,8 +50,9 @@ while True:
     try:
         client = Client(Session(username=input("请输入 Jaccount 用户名:"), password=input("请输入 Jaccount 密码:"))) 
         break
-    except:
-        print("登录失败，请检查用户名和密码是否正确。")
+    except Exception as error:
+        print('登录失败，请检查用户名和密码是否正确，或关闭VPN代理后重试。')
+        print('详细报错：'+error)
 
 # 循环输入学年和学期，直到以正确的格式输入
 while True:
@@ -94,3 +99,4 @@ fn = desktopDir / "schedule.ics"
 with open(fn, mode="w", encoding="utf-8") as f:
     f.write(c.serialize())
 print(f"已生成 iCal 文件到 {fn}，后续导入请参考网络教程。祝你生活愉快 =)")
+t.sleep(10)

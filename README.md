@@ -14,9 +14,10 @@ After you get the iCalendar file, you can open it to check whether it is right o
 
 ## Tips/提示 💡
 
-1. Do not use VPN or proxy when using this tool. It may cause some issues while logging in. 使用时请勿使用代理VPN，否则可能导致登陆失败。
-2. For iOS/iPadOS devices, you can drag the file to the "Calendar" app to import it. To delete all the imported events, delete the tag holding all the events in the "Calendar" app. Recommendation: import the events into a new tag for better organization. 对于 iOS/iPadOS 设备，你可以将文件拖动到 “Calendar” 应用中导入。要删除导入的日程，在 “Calendar” 应用中删除日程所属的标签。建议：导入你的课程日程到一个新的标签中，以便更好地管理。
-3. For Windows devices, you can double click the file to import it into the "Calendar" app. 对于 Windows 设备，你可以直接双击文件导入到 “Calendar” 应用中。
+1. **The beginning date of the term is always the first Monday of the first week. 需要注意，学期开始日总是第一周的周一。**
+2. Do not use VPN or proxy when using this tool. It may cause some issues while logging in. 使用时请勿使用代理VPN，否则可能导致登陆失败。
+3. For iOS/iPadOS devices, you can drag the file to the "Calendar" app to import it. To delete all the imported events, delete the tag holding all the events in the "Calendar" app. Recommendation: import the events into a new tag for better organization. 对于 iOS/iPadOS 设备，你可以将文件拖动到 “Calendar” 应用中导入。要删除导入的日程，在 “Calendar” 应用中删除日程所属的标签。建议：导入你的课程日程到一个新的标签中，以便更好地管理。
+4. For Windows devices, you can double click the file to import it into the "Calendar" app. 对于 Windows 设备，你可以直接双击文件导入到 “Calendar” 应用中。
 
 ## How it works/原理 🧠
 
